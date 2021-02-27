@@ -1,0 +1,18 @@
+{
+    "name": "yiiforces/inquid-template-generator",
+    "license": "",
+    "authors": [
+        {
+            "name": "Flavio E. Salas M.",
+            "email": "salas.flavio@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "yiiforces\\inquidTemplateGenerator\\": "src/"
+        }
+    }
+}

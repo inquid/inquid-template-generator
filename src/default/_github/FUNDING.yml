@@ -1,0 +1,5 @@
+custom:
+  - "https://<?= $generator->githubUserAccount?>.dev"
+  - "https://www.buymeacoffee.com/<?= $generator->githubUserAccount?>"
+  - "https://ko-fi.com/<?= $generator->githubUserAccount?>"
+github: "<?= $generator->githubUserAccount?>"
