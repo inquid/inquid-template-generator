@@ -149,7 +149,7 @@ class Generator extends \yii\gii\Generator
     {
         return [
             'composer.json',
-            'README.md',
+            '_README.md',
             'composer-require-checker.json',
             'gitattributes',
             'editorconfig',
@@ -191,7 +191,7 @@ class Generator extends \yii\gii\Generator
 
         $files[] = new CodeFile(
             $modulePath . '/' . $this->packageName . '/README.md',
-            $this->render('README.md')
+            $this->render('_README.md')
         );
 
         $files[] = new CodeFile(
