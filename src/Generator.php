@@ -32,7 +32,7 @@ class Generator extends \yii\gii\Generator
      */
     public function getName()
     {
-        return 'Inquid Template Extension Generator';
+        return 'Inquid Template Generator';
     }
 
     /**
@@ -40,7 +40,7 @@ class Generator extends \yii\gii\Generator
      */
     public function getDescription()
     {
-        return 'This generator helps you to generate the files needed by a Yii extension.';
+        return 'This generator helps you to generate the files needed by ergebnis/php-library-template';
     }
 
     /**
@@ -92,6 +92,9 @@ class Generator extends \yii\gii\Generator
             [['type'], 'filter', 'filter' => 'trim'],
             [['type'], 'in',     'range'  => array_keys( static::optsType() )],
 
+            // outputPath
+            [['outputPath'], 'required'],
+            [['outputPath'], 'filter', 'filter'  => 'trim'],
         ]);
     }
 
@@ -128,7 +131,7 @@ class Generator extends \yii\gii\Generator
      */
     public function stickyAttributes()
     {
-        return ['githubUserAccount', 'outputPath', 'authorName', 'authorEmail'];
+        return ['githubUserAccount', 'authorName', 'authorEmail'];
     }
 
     /**
